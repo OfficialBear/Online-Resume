@@ -41,7 +41,7 @@ export function Contact() {
 
       <div className="mt-10 grid gap-4 md:grid-cols-2">
         <Reveal className="panel p-5 md:p-6">
-          <div className="text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+          <div className="text-sm font-semibold tracking-tight text-[color:var(--ink)]">
             邮箱
           </div>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
@@ -50,7 +50,7 @@ export function Contact() {
 
           <div className="mt-4 flex flex-wrap gap-3">
             <a
-              className="focus-ring rounded-xl bg-ink-1 px-4 py-2 text-sm font-semibold text-white shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] dark:bg-white dark:text-black"
+              className="focus-ring rounded-xl bg-[color:var(--ink)] text-[color:var(--bg)] px-4 py-2 text-sm font-semibold shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)]"
               href={`mailto:${profile.links.email}`}
             >
               发邮件

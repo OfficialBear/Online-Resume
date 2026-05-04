@@ -57,7 +57,7 @@ export function Hero() {
                 <button
                   type="button"
                   onClick={() => scrollToId('projects')}
-                  className="focus-ring rounded-xl bg-ink-1 px-4 py-2 text-sm font-semibold text-white shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] dark:bg-white dark:text-black"
+                  className="focus-ring rounded-xl bg-[color:var(--ink)] text-[color:var(--bg)] px-4 py-2 text-sm font-semibold shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)]"
                 >
                   核心项目
                 </button>

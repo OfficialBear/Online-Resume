@@ -52,10 +52,11 @@ export function TopNav() {
           <button
             type="button"
             onClick={() => scrollToId('projects')}
-            className="focus-ring inline-flex items-center gap-2 rounded-xl bg-ink-1 px-3 py-2 text-sm font-semibold text-white shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] dark:bg-white dark:text-black"
+            className="focus-ring inline-flex items-center gap-2 rounded-xl bg-[color:var(--ink)] px-3 py-2 text-sm font-semibold text-[color:var(--bg)]
+shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)]"
           >
             看核心项目
-            <span aria-hidden className="text-white/70 dark:text-black">
+            <span aria-hidden className="text-[color:var(--bg)]/70">
               →
             </span>
           </button>

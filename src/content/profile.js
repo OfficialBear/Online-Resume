@@ -6,7 +6,7 @@ export const profile = {
   location: '中国',
   availability: '到岗：2-4 周',
   links: {
-    email: 'gengcanwei@gmail.com',
+    email: 'sudosurmrf72@gmail.com',
     github: 'https://github.com/gengcanwei',
     linkedin: 'https://www.linkedin.com/in/gengcanwei',
     blog: 'https://gengcanwei.com',
