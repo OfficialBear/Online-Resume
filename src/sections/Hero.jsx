@@ -31,7 +31,7 @@ export function Hero() {
                 initial={reduce ? false : { opacity: 0, y: 12 }}
                 animate={reduce ? undefined : { opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1], delay: 0.05 }}
-                className="mt-4 text-4xl font-semibold tracking-tighter2 text-ink-1 dark:text-slate-1 md:text-5xl"
+                className="mt-4 text-4xl font-semibold tracking-tighter2 text-[color:var(--ink)] md:text-5xl"
               >
                 {profile.name}
                 <span className="block text-[0.62em] font-medium tracking-tight text-[color:var(--muted)] md:mt-2">
@@ -64,7 +64,7 @@ export function Hero() {
                 <button
                   type="button"
                   onClick={() => scrollToId('contact')}
-                  className="focus-ring rounded-xl border border-[color:var(--hairline)] bg-white/60 px-4 py-2 text-sm font-semibold text-ink-1 shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] dark:bg-white/5 dark:text-slate-1"
+                  className="focus-ring rounded-xl border border-[color:var(--hairline)] bg-[color:var(--panel)] px-4 py-2 text-sm font-semibold text-[color:var(--ink)] shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] bg-[color:var(--panel)]"
                 >
                   联系方式
                 </button>
@@ -82,9 +82,9 @@ export function Hero() {
                     ease: [0.2, 0.8, 0.2, 1],
                     delay: 0.12 + idx * 0.06,
                   }}
-                  className="w-full rounded-2xl border border-[color:var(--hairline)] bg-white/70 px-4 py-3 shadow-[0_1px_0_rgba(15,23,42,.04)] dark:bg-white/5 md:max-w-[360px]"
+                  className="w-full rounded-2xl border border-[color:var(--hairline)] bg-[color:var(--panel)] px-4 py-3 shadow-[0_1px_0_rgba(15,23,42,.04)] bg-[color:var(--panel)] md:max-w-[360px]"
                 >
-                  <div className="text-xs font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+                  <div className="text-xs font-semibold tracking-tight text-[color:var(--ink)]">
                     {h.k}
                   </div>
                   <div className="mt-1 text-xs leading-5 text-[color:var(--muted)]">{h.v}</div>

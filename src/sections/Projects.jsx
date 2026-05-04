@@ -6,7 +6,7 @@ import { projects } from '../content/profile.js'
 
 function Chip({ children }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-[color:var(--hairline)] bg-white/60 px-3 py-1 text-xs font-semibold text-ink-1 dark:bg-white/5 dark:text-slate-1">
+    <span className="inline-flex items-center rounded-full border border-[color:var(--hairline)] bg-[color:var(--panel)]/80 px-3 py-1 text-xs font-semibold text-[color:var(--ink)]">
       {children}
     </span>
   )
@@ -14,9 +14,9 @@ function Chip({ children }) {
 
 function Metric({ k, v }) {
   return (
-    <div className="rounded-2xl border border-[color:var(--hairline)] bg-white/60 px-4 py-3 dark:bg-white/5">
+    <div className="rounded-2xl border border-[color:var(--hairline)] bg-[color:var(--panel)] px-4 py-3 ">
       <div className="text-xs font-medium text-[color:var(--muted)]">{k}</div>
-      <div className="mt-1 text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+      <div className="mt-1 text-sm font-semibold tracking-tight text-[color:var(--ink)]">
         {v}
       </div>
     </div>
@@ -31,10 +31,10 @@ function ProjectCard({ p, defaultOpen = false }) {
       <div className="flex flex-col justify-between gap-5 md:flex-row md:items-start">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
-            <h3 className="text-xl font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+            <h3 className="text-xl font-semibold tracking-tight text-[color:var(--ink)]">
               {p.name}
             </h3>
-            <span className="rounded-full border border-[color:var(--hairline)] bg-white/50 px-2.5 py-1 text-xs font-medium text-[color:var(--muted)] dark:bg-white/5">
+            <span className="rounded-full border border-[color:var(--hairline)] bg-[color:var(--panel)] px-2.5 py-1 text-xs font-medium text-[color:var(--muted)]">
               {p.period}
             </span>
           </div>
@@ -57,7 +57,7 @@ function ProjectCard({ p, defaultOpen = false }) {
       </div>
 
       <div className="mt-6 grid gap-3">
-        <div className="text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+        <div className="text-sm font-semibold tracking-tight text-[color:var(--ink)]">
           关键工作
         </div>
         <ul className="grid gap-2 text-sm leading-6 text-[color:var(--muted)]">
@@ -74,7 +74,7 @@ function ProjectCard({ p, defaultOpen = false }) {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="focus-ring inline-flex items-center gap-2 rounded-xl border border-[color:var(--hairline)] bg-white/60 px-3 py-2 text-sm font-semibold text-ink-1 shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] dark:bg-white/5 dark:text-slate-1"
+          className="focus-ring inline-flex items-center gap-2 rounded-xl border border-[color:var(--hairline)] bg-[color:var(--panel)] text-[color:var(--ink)] px-3 py-2 text-sm font-semibold shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)]"
         >
           {open ? '收起架构图' : '展开架构图'}
           <span aria-hidden className="text-[color:var(--muted)]">

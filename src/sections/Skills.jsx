@@ -4,7 +4,7 @@ import { capabilityModel } from '../content/profile.js'
 
 function Pill({ children }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-[color:var(--hairline)] bg-white/60 px-2.5 py-1 text-xs font-medium text-[color:var(--muted)] dark:bg-white/5">
+    <span className="inline-flex items-center rounded-full border border-[color:var(--hairline)] bg-[color:var(--panel)] px-2.5 py-1 text-xs font-medium text-[color:var(--muted)]">
       {children}
     </span>
   )
@@ -24,13 +24,13 @@ export function Skills() {
           <Reveal key={m.name} className="panel p-5 md:p-6" delay={0.05 + idx * 0.05}>
             <div className="flex items-start justify-between gap-4">
               <div>
-                <div className="text-base font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+                <div className="text-base font-semibold tracking-tight text-[color:var(--ink)]">
                   {m.name}
                 </div>
                 <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">{m.summary}</p>
               </div>
 
-              <div className="hidden h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[color:var(--hairline)] bg-white/70 text-sm font-semibold text-ink-1 shadow-[0_1px_0_rgba(15,23,42,.04)] dark:bg-white/5 md:flex">
+              <div className="hidden h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[color:var(--hairline)] text-sm font-semibold text-[color:var(--ink)] shadow-[0_1px_0_rgba(15,23,42,.04)] bg-[color:var(--panel)] md:flex">
                 {String(idx + 1).padStart(2, '0')}
               </div>
             </div>

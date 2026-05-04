@@ -28,7 +28,7 @@ export function TopNav() {
           <button
             type="button"
             onClick={() => scrollToId('top')}
-            className="focus-ring inline-flex items-center gap-2 rounded-xl px-2 py-1 text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1"
+            className="focus-ring inline-flex items-center gap-2 rounded-xl px-2 py-1 text-sm font-semibold tracking-tight text-[color:var(--ink)]"
             aria-label="回到顶部"
           >
             <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-r from-brand-1 to-brand-2" />
@@ -42,7 +42,7 @@ export function TopNav() {
                 key={it.id}
                 type="button"
                 onClick={() => scrollToId(it.id)}
-                className="focus-ring rounded-xl px-3 py-2 text-sm text-[color:var(--muted)] hover:text-ink-1 dark:hover:text-slate-1"
+                className="focus-ring rounded-xl px-3 py-2 text-sm text-[color:var(--muted)] hover:text-[color:var(--ink)]"
               >
                 {it.label}
               </button>

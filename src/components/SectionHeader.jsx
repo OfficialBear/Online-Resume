@@ -6,12 +6,12 @@ export function SectionHeader({ eyebrow, title, desc, align = 'left' }) {
   return (
     <Reveal className={cn(isCenter && 'text-center')}>
       {eyebrow ? (
-        <div className="inline-flex items-center gap-2 rounded-full border border-[color:var(--hairline)] bg-white/50 px-3 py-1 text-xs font-medium text-[color:var(--muted)] shadow-[var(--shadow-subtle)] dark:bg-white/5">
-          <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand-1 to-brand-2" />
+        <div className="inline-flex items-center gap-2 rounded-full border border-[color:var(--hairline)] bg-[color:var(--panel)]/80 px-3 py-1 text-xs font-medium text-[color:var(--muted)] shadow-[var(--shadow-subtle)]">
+          {/* <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand-1 to-brand-2" /> */}
           <span>{eyebrow}</span>
         </div>
       ) : null}
-      <h2 className={cn('mt-4 text-3xl font-semibold tracking-tight text-ink-1 dark:text-slate-1 md:text-4xl', isCenter && 'mx-auto max-w-2xl')}>
+      <h2 className={cn('mt-4 text-3xl font-semibold tracking-tight text-[color:var(--ink)] md:text-4xl', isCenter && 'mx-auto max-w-2xl')}>
         {title}
       </h2>
       {desc ? (

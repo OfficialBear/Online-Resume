@@ -15,10 +15,10 @@ export function Experience() {
         {experience.map((e, idx) => (
           <Reveal key={e.company} className="panel p-5 md:p-6" delay={0.05 + idx * 0.05}>
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <div className="text-lg font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+              <div className="text-lg font-semibold tracking-tight text-[color:var(--ink)]">
                 {e.company}
               </div>
-              <div className="rounded-full border border-[color:var(--hairline)] bg-white/50 px-3 py-1 text-xs font-medium text-[color:var(--muted)] dark:bg-white/5">
+              <div className="rounded-full border border-[color:var(--hairline)] bg-[color:var(--panel)]/80 px-3 py-1 text-xs font-medium text-[color:var(--muted)]">
                 {e.period}
               </div>
             </div>

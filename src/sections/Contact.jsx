@@ -15,13 +15,13 @@ async function copyText(text) {
 function LinkCard({ label, value, href }) {
   return (
     <a
-      className="focus-ring block rounded-2xl border border-[color:var(--hairline)] bg-white/60 px-4 py-3 shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] dark:bg-white/5"
+      className="focus-ring block rounded-2xl border border-[color:var(--hairline)] bg-[color:var(--panel)]/80 backdrop-blur-sm px-4 py-3 shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)]"
       href={href}
       target="_blank"
       rel="noreferrer"
     >
       <div className="text-xs font-medium text-[color:var(--muted)]">{label}</div>
-      <div className="mt-1 truncate text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+      <div className="mt-1 truncate text-sm font-semibold tracking-tight text-[color:var(--ink)]">
         {value}
       </div>
     </a>
@@ -57,7 +57,7 @@ export function Contact() {
             </a>
             <button
               type="button"
-              className="focus-ring rounded-xl border border-[color:var(--hairline)] bg-white/60 px-4 py-2 text-sm font-semibold text-ink-1 shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] dark:bg-white/5 dark:text-slate-1"
+              className="focus-ring rounded-xl border border-[color:var(--hairline)] bg-[color:var(--panel)] text-[color:var(--ink)] px-4 py-2 text-sm font-semibold shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-lift)] hover:bg-[color:var(--panel)]/80"
               onClick={async () => {
                 const ok = await copyText(profile.links.email)
                 setCopied(ok)

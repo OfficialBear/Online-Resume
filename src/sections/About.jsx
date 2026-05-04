@@ -12,7 +12,7 @@ export function About() {
 
       <div className="mt-10 grid gap-4 md:grid-cols-3">
         <Reveal className="panel p-5 md:p-6" delay={0.05}>
-          <div className="text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+          <div className="text-sm font-semibold tracking-tight text-[color:var(--ink)]">
             以指标验收交付
           </div>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
@@ -21,7 +21,7 @@ export function About() {
         </Reveal>
 
         <Reveal className="panel p-5 md:p-6" delay={0.10}>
-          <div className="text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+          <div className="text-sm font-semibold tracking-tight text-[color:var(--ink)]">
             一致性工程闭环
           </div>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
@@ -30,7 +30,7 @@ export function About() {
         </Reveal>
 
         <Reveal className="panel p-5 md:p-6" delay={0.15}>
-          <div className="text-sm font-semibold tracking-tight text-ink-1 dark:text-slate-1">
+          <div className="text-sm font-semibold tracking-tight text-[color:var(--ink)]">
             稳定性与可观测
           </div>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
